@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  profilemicroservice:
+    image: ${DOCKER_REGISTRY-}profilemicroservice
+    build:
+      context: .
+      dockerfile: ProfileMicroservice\Dockerfile

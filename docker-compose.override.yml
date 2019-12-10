@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  profilemicroservice:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "83"
+
+networks:
+  default:
+    external:
+      name: nat
